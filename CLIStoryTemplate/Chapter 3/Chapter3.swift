@@ -40,8 +40,29 @@ func chapterThree() {
     if testTrial == 11 {
         print("Time to go for a test run")
         
+        enum Weather {
+            case cold
+            case rain
+            case snow
+            case hot
+            case windy
+        }
         
-        print("For the test run they have their friend walk around the neighbor while they find the perfect spots to pop out scare him. But they didnt want to just scare them, they wanted to chase them around all night to leave them as traumatized as possible. Now that they have all of their spots together and everythng planned out, they are ready to execute their plan on holloween night.")
-
+        func weatherForToday(weather: Weather) {
+            switch weather {
+            case .cold:
+                print("They bundled up for the cold weather before they went out the house.")
+            case .rain:
+                print("they waited until it stopped raining before they went out.")
+            case .snow:
+                print("they put on boots and big clothes under their costumes.")
+            case .hot:
+                print("they went straight out the house with just their costumes on.")
+            case .windy:
+                print("they put light jackets under their costumes before we went out ")
+            }
+        }
+        weatherForToday(weather: .cold)
+        print("For the test run they had their friend walk around the neighbor while they find the perfect spots to pop out scare him. But they didnt want to just scare them, they wanted to chase them around all night to leave them as traumatized as possible. Now that they have all of their spots together and everythng planned out, they are ready to execute their plan on holloween night.")
     }
 }
