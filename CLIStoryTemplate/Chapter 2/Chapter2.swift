@@ -100,8 +100,8 @@ func chapterTwo(){
         return nil
     }
     
-    sentEight(option: "thought")
-    print(sentEight(option: "thought")!)
+   print(sentEight(option: "thought")!)
+   
     
     // force unwrapped ^?
     
@@ -151,8 +151,10 @@ func chapterTwo(){
             }
         }
     }
+    
     var declare = tenthSen(name: "Jimmy", name2: "Jake", action: "planning", YorN: true)
     declare.tenthSentence()
-    
-    
 }
+    
+    
+
