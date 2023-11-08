@@ -63,6 +63,7 @@ func chapterTwo(){
     
     
     // struct
+    // a function that’s been marked as mutating can change any property within its enclosing value.
     struct sixthSen {
         var name: String
         var locationOne: String
@@ -76,8 +77,8 @@ func chapterTwo(){
             }
         }
     }
-    var declaration = sixthSen(name: "Jimmy", locationOne: "home", locationTwo: "school", YorN: true)
-    declaration.sixthSentence()
+    var declare = sixthSen(name: "Jimmy", locationOne: "home", locationTwo: "school", YorN: true)
+    declare.sixthSentence()
     
     
     
@@ -93,6 +94,7 @@ func chapterTwo(){
     
     
     // optional
+    //a constant or variable that can hold a value OR no value. The value can or cannot be nil
     func sentEight(option: String) -> String? {
         if option == "thought" { return "He thought about it everyday, ways he could've stopped it or defended himself."}
         if option == "cried" { return "He cried so hard"}
@@ -102,7 +104,7 @@ func chapterTwo(){
     
    print(sentEight(option: "thought")!)
    
-    
+    // Unwrapping is essentially verifying if the Optional value is nil or not, and then it performs a task only if it's not nil
     // force unwrapped ^?
     
     
@@ -152,8 +154,8 @@ func chapterTwo(){
         }
     }
     
-    var declare = tenthSen(name: "Jimmy", name2: "Jake", action: "planning", YorN: true)
-    declare.tenthSentence()
+    var declaration = tenthSen(name: "Jimmy", name2: "Jake", action: "planning", YorN: true)
+    declaration.tenthSentence()
 }
     
     
