@@ -63,6 +63,7 @@ func chapterTwo(){
     
     
     // struct
+    // a function that’s been marked as mutating can change any property within its enclosing value.
     struct sixthSen {
         var name: String
         var locationOne: String
@@ -76,8 +77,8 @@ func chapterTwo(){
             }
         }
     }
-    var declaration = sixthSen(name: "Jimmy", locationOne: "home", locationTwo: "school", YorN: true)
-    declaration.sixthSentence()
+    var declare = sixthSen(name: "Jimmy", locationOne: "home", locationTwo: "school", YorN: true)
+    declare.sixthSentence()
     
     
     
